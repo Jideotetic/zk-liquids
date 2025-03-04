@@ -18,19 +18,27 @@ function App() {
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/" className="text-[#6D7A86]">
+            <BreadcrumbLink
+              href="/"
+              className="text-[#6D7A86] hover:text-white"
+            >
               Go Back
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink href="/orders" className="text-[#6D7A86]">
+            <BreadcrumbLink
+              href="/orders"
+              className="text-[#6D7A86] hover:text-whites"
+            >
               Orders
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>0xb10455fed0a9f4c782af</BreadcrumbPage>
+            <BreadcrumbPage className="text-white">
+              0xb10455fed0a9f4c782af
+            </BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
@@ -41,7 +49,7 @@ function App() {
           <span>Fulfilled</span>
         </div>
 
-        <Progress value={100} className="bg-[#2DD4BF]" />
+        <Progress value={0} className="bg-[#2DD4BF]" />
       </div>
 
       <div className="mt-6 flex flex-col gap-4 sm:flex-row">
