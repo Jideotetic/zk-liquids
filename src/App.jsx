@@ -52,7 +52,7 @@ function App() {
           </div>
           <div className="bg-[#04131F] rounded p-2 flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <img src={viteLogo} alt="" />
+              <img src={viteLogo} alt="" className="w-10 h-10" />
               <span>USDT</span>
             </div>
             <span>7.054632</span>
@@ -65,7 +65,7 @@ function App() {
           </div>
           <div className="bg-[#04131F] rounded p-2 flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <img src={reactLogo} alt="" />
+              <img src={reactLogo} alt="" className="w-10 h-10" />
               <span>BCH</span>
             </div>
             <span>4,000.13</span>
@@ -87,8 +87,132 @@ function App() {
       </div>
 
       <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-        <div className="border p-4 rounded border-neutral-900 flex-1"></div>
-        <div className="border p-4 rounded border-neutral-900 flex-1"></div>
+        <div className="border rounded border-neutral-900 flex-1">
+          <div className="border-b p-4 border-neutral-900 flex items-center gap-2">
+            <img src={viteLogo} alt="" className="w-10 h-10" />
+            <div className="flex flex-col">
+              <span className="text-[#6D7A86]">From:</span>
+              <span>USDT</span>
+            </div>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Actual order asset</span>
+            <div className="flex items-center gap-1">
+              <img src={viteLogo} alt="" className="w-5 h-5" />
+              <span>USDT Coin</span>
+            </div>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Amount</span>
+            <span>4,003.1 USDT</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Decimals</span>
+            <span>18</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Maker</span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Solver</span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Creation tx</span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Creation time</span>
+            <span>04 Mar, 2025 • 12:35:19 PM</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">
+              Order authority in source chain
+            </span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Order creator nonce</span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Unlock Claim Tx</span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Solver unlock beneficiary</span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Unlock Claim Time</span>
+            <span>04 Mar, 2025 • 2:17:46 PM</span>
+          </div>
+        </div>
+        <div className="border rounded border-neutral-900 flex-1">
+          <div className="border-b p-4 border-neutral-900 flex items-center gap-2">
+            <img src={reactLogo} alt="" className="w-10 h-10" />
+            <div className="flex flex-col">
+              <span className="text-[#6D7A86]">To:</span>
+              <span>BCH</span>
+            </div>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Asset</span>
+            <div className="flex items-center gap-1">
+              <img src={reactLogo} alt="" className="w-5 h-5" />
+              <span>BCH Coin</span>
+            </div>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Amount</span>
+            <span>4,003.1 USDT</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Decimals</span>
+            <span>18</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Solver</span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Fulfill tx</span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Fulfillment time</span>
+            <span>04 Mar, 2025 • 12:35:23 PM</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">
+              Order authority in source chain
+            </span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Receiver address</span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Unlock message</span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Unlock time</span>
+            <span>04 Mar, 2025 • 12:35:23 PM</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">
+              Unlock authority in destination chain
+            </span>
+            <span>0x4264d7fcdcad03b578</span>
+          </div>
+          <div className="border-b p-4 border-neutral-900 flex flex-col gap-1 sm:flex-row justify-between sm:items-center">
+            <span className="text-[#6D7A86]">Status for Solver</span>
+            <span>Order fulfilled and unlocked</span>
+          </div>
+        </div>
       </div>
     </>
   );
