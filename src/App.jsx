@@ -29,7 +29,7 @@ function App() {
           <BreadcrumbItem>
             <BreadcrumbLink
               href="/orders"
-              className="text-[#6D7A86] hover:text-whites"
+              className="text-[#6D7A86] hover:text-white"
             >
               Orders
             </BreadcrumbLink>
